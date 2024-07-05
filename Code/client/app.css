@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+:root {
+  --main-color: #634caf;
+  --secondary-color: #f2f2f2;
+  --text-color: rgba(0, 0, 0, 0.7);
+  --border-radius: 6px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.img {
+  background: url('http://onekindesign.com/wp-content/uploads/2016/11/Tropical-Modern-Home-Metropole-Architects-00-1-Kindesign.jpg');
+  background-size: cover;
+  filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.form {
+  max-width: 300px;
+  margin: 16px auto;
+  padding: 16px;
+  background: transparent;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: rgba(21, 2, 2, 0.728); 
+}
+
+.switch-field {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  padding: 10px 20px;
+  margin-right: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
+  border-radius: var(--border-radius);
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+  background-color: #d9d9d9;
+}
+
+.switch-field input:checked + label {
+  background-color: var(--main-color);
+  color: white;
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.area, .location, .submit, .result {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: var(--secondary-color);
+  width: 76%;
+  border: 0;
+  margin: 10px 0;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  transition: background 0.2s ease-in-out;
+  color: #fff;
+}
+
+.area:hover, .location:hover, .submit:hover, .result:hover {
+  background: #e0e0e0;
+}
+
+.submit {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: darken(var(--main-color), 10%);
+}
+
+.result {
+    background: white; /* Changed background color to white */
+    text-align: center;
+    padding: 20px; /* Increased padding for better spacing */
+}
+.result h2 {
+    color: black; /* Change this to your desired text color */
+    font-size: 24px;
+  }
+  
